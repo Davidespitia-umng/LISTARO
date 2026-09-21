@@ -1,47 +1,14 @@
-## Cuenta de prueba
+## LISTARO
 
-| Correo | Contraseña |
-|---|---|
-| `demo@listaro.co` | `demo1234` |
+LISTARO es una plataforma web que centraliza y facilita la gestión del inventario de un hotel, permitiendo controlar productos, movimientos y existencias de forma organizada, trazable y según los permisos de cada usuario.
 
-Viene con dos edificios (Hotel Central y Edificio Norte), sus habitaciones y
-artículos ya cargados. También puedes crear tu propia cuenta desde
-`registro.html`.
+## Descripción del proyecto
 
-## Archivos
+LISTARO es un sistema web de gestión y control de inventario diseñado para establecimientos hoteleros. Su propósito es centralizar y organizar la información relacionada con los productos y elementos utilizados en las diferentes áreas de un hotel, facilitando el control de existencias y el seguimiento de los movimientos de inventario.
 
-```
-listaro-web/
-├── index.html         # Landing page
-├── login.html         # Iniciar sesión
-├── registro.html      # Crear cuenta
-├── panel.html         # Mis edificios
-├── edificio.html      # Habitaciones de un edificio  (edificio.html?id=1)
-├── habitacion.html    # Inventario y movimientos     (habitacion.html?id=1)
-├── css/
-│   └── styles.css     # Tema oscuro con acento naranja
-└── js/
-    ├── datos.js       # Almacén: cuentas, edificios, habitaciones, artículos
-    └── app.js         # Interfaz: navegación, modales y pintado de pantallas
-```
+La plataforma permite registrar y administrar productos, consultar existencias, gestionar entradas y salidas, realizar búsquedas y filtros, consultar el historial de movimientos y generar alertas cuando un producto alcanza o se encuentra por debajo de su stock mínimo. Además, incorpora autenticación, control de usuarios y permisos según los diferentes roles del sistema.
 
-## Dónde se guardan los datos
+LISTARO contempla tres perfiles principales: Administrador, Encargado de Inventario y Empleado de Área, cada uno con diferentes niveles de acceso y responsabilidades. De esta manera, el sistema permite mantener una trazabilidad de las operaciones, asociando cada movimiento con el usuario responsable, el producto, la fecha, la cantidad y el tipo de operación realizada.
 
-En el `localStorage` del navegador, con la clave `listaro:datos`. Eso significa:
+El proyecto busca reemplazar procesos manuales, hojas de cálculo o información dispersa por una plataforma centralizada que facilite la consulta de información, el control de inventario y la toma de decisiones relacionadas con compras y reposición.
 
-- Los cambios se conservan aunque cierres la pestaña.
-- Cada navegador tiene su propia copia; no se comparte entre computadores.
-- Borrar el historial o los datos del sitio borra el inventario.
-
-Para volver al estado inicial, abre la consola del navegador (`F12`) y escribe:
-
-```js
-Datos.reiniciar(); location.reload();
-```
-
-## Nota para la sustentación
-
-Las contraseñas se guardan en texto plano dentro del navegador porque no hay
-servidor: esta versión es una **maqueta funcional** para demostrar los flujos de
-la interfaz. En una versión real, el registro, el inicio de sesión y el
-inventario irían en un backend con base de datos y contraseñas cifradas.
