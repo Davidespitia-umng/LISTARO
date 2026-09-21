@@ -1,17 +1,3 @@
-# Listaro — versión web (sin Python)
-
-Sitio de gestión de inventario por **edificio → habitación → artículo**, hecho
-solo con HTML, CSS y JavaScript. No necesita servidor ni instalar nada.
-
-## Cómo abrirlo
-
-1. Abre la carpeta `listaro-web` en Visual Studio Code.
-2. Clic derecho sobre `index.html` → **Open with Live Server**.
-   (O simplemente haz doble clic en `index.html`; también funciona.)
-
-Esta vez sí puedes usar Live Server: ya no hay plantillas de Jinja, son
-archivos `.html` normales.
-
 ## Cuenta de prueba
 
 | Correo | Contraseña |
