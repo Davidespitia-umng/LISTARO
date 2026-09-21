@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta en Listaro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<main class="split">
+  <section class="split-izq">
+    <a class="marca" href="index.html"><span class="marca-punto"></span> Listaro</a>
+    <div>
+      <h1>Empieza hoy.<br><span class="naranja">Es gratis.</span></h1>
+      <p>Crea tu cuenta y arma el inventario de tu primer edificio en minutos.</p>
+      <ul class="lista-chequeo">
+        <li>Sin tarjeta y sin instalar nada</li>
+        <li>Tus edificios, habitaciones y artículos en un solo panel</li>
+        <li>Cada cuenta ve únicamente su propio inventario</li>
+      </ul>
+    </div>
+    <p class="split-pie">Inventario por edificio, habitación y artículo.</p>
+  </section>
+
+  <section class="split-der">
+    <div class="formulario">
+      <h2>Crear cuenta</h2>
+      <p class="sub">Toma menos de un minuto.</p>
+
+      <p class="error" id="error-registro" hidden></p>
+
+      <form id="form-registro" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name"
+               placeholder="Cómo te llamamos" required>
+
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" autocomplete="email"
+               placeholder="tu@correo.com" required>
+
+        <label for="clave">Contraseña</label>
+        <input id="clave" name="clave" type="password" autocomplete="new-password"
+               placeholder="Mínimo 8 caracteres" required>
+
+        <label for="confirmar">Repite la contraseña</label>
+        <input id="confirmar" name="confirmar" type="password"
+               autocomplete="new-password" placeholder="Escríbela otra vez" required>
+
+        <button class="btn btn-naranja btn-bloque" type="submit">Crear cuenta</button>
+      </form>
+
+      <p class="sub">¿Ya tienes cuenta?
+        <a class="enlace-naranja" href="login.html">Entra aquí</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
